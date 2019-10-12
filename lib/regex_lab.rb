@@ -1,8 +1,10 @@
 def starts_with_a_vowel?(word)
-  if word.match(/[aeiou].*$/)
-    return true
-  else
-    return false
+  word.each do |starting_letter|
+    if starting_letter.match(/^[aeiou].*$/)
+      return true
+    else
+      return false
+    end
   end
 end
 

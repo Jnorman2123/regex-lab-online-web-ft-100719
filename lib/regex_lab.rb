@@ -10,7 +10,7 @@ def words_starting_with_un_and_ending_with_ing(text)
 true_words = []
   if text.scan(/^un.*ing$/)
     true_words << text
-  end 
+  end
   p true_words
 end
 

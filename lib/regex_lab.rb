@@ -23,7 +23,9 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
-  phone.each do |numbers|
-    p numbers.scan([0-9])
-  end
+  if phone.match(/^1?\(?\d{3}\)?\s?\d{3}\-?\s?\d{4}$/)
+    return true 
+  else 
+    return false 
+  end 
 end
